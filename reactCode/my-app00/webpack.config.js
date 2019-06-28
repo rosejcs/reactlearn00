@@ -27,5 +27,9 @@ module.exports = {
         exclude: /node_modules/
       },
 		]
-	}
+  },
+  resolve: {
+    extensions: ['.js','.jsx','.json']//表示，这几个文件的后缀名，可以省略不写
+  },
+  alias:{}
 };
