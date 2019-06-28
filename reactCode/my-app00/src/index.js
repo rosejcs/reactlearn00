@@ -26,6 +26,9 @@ console.log(
   })
 );
 
+let cn = 'myp';
+
+
 // 3.调用 render 函数渲染
 ReactDOM.render(
   <div>
@@ -44,6 +47,9 @@ ReactDOM.render(
     {arrStr.map((item,i) => {
       return <h5 key= {i}>{item + "===>"}</h5>; 
     })}
+    <hr/>
+    <p className={cn}>!!!!!!</p>
+
   </div>,
   document.getElementById("app")
 );
